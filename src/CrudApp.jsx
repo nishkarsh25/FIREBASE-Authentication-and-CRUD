@@ -23,7 +23,12 @@ function CrudApp() {
         }
     };
 
-    
+    const updateItem = async (id, newName) => {
+        await db.collection("items").doc(id).update({ name: newName });
+        setItems(items.map(item => (item.id === id ? { ...item, name: newName } : item)));
+        setSelectedItemId(null);
+        setUpdatedItemName("");
+    };
 
     
 
