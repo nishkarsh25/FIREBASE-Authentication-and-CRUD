@@ -8,7 +8,7 @@ import { useAuth } from './AuthProvider';
 import CrudApp from './CrudApp';
 
 function App() {
-  
+  const { currentUser } = useAuth();
 
   
 }
