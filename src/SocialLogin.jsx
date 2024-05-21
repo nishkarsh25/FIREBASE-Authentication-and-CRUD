@@ -18,7 +18,20 @@ function SocialLogin() {
       }
     };
   
-    
+    const handleFacebookLogin = async () => {
+      const provider = new firebase.auth.FacebookAuthProvider();
+      try {
+        const result = await auth.signInWithPopup(provider);
+        const user = result.user;
+        if (user.metadata.creationTime === user.metadata.lastSignInTime) {
+          alert('Signed up with Facebook!');
+        } else {
+          alert('Logged in with Facebook!');
+        }
+      } catch (error) {
+        alert(error.message);
+      }
+    };
   
     
   }
