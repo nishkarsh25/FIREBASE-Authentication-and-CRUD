@@ -7,7 +7,13 @@ function CrudApp() {
     const [selectedItemId, setSelectedItemId] = useState(null);
     const [updatedItemName, setUpdatedItemName] = useState("");
 
-    
+    useEffect(() => {
+        const fetchData = async () => {
+            const data = await db.collection("items").get();
+            setItems(data.docs.map(doc => ({ ...doc.data(), id: doc.id })));
+        };
+        fetchData();
+    }, []);
 
     
 
