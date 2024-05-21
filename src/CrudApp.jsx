@@ -35,11 +35,21 @@ function CrudApp() {
         setItems(items.filter(item => item.id !== id));
     };
 
-    
+    const handleUpdateClick = (id, name) => {
+        setSelectedItemId(id);
+        setUpdatedItemName(name); // Setting the value to display in the input field
+    };
 
-    
+    const handleCancelClick = () => {
+        setSelectedItemId(null);
+        setUpdatedItemName("");
+    };
 
-    
+    const handleAddKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            addItem();
+        }
+    };
 
     
 
