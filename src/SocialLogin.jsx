@@ -51,4 +51,4 @@ function SocialLogin() {
     );
   }
 
-
+export default SocialLogin;
