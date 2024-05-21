@@ -17,13 +17,9 @@ This is a CRUD (Create, Read, Update, Delete) application built using React.js f
   - **Delete Item**: Users can delete items from the list.
 
 
-## Installation and Setup
-
-1. **Clone the Repository**:
-
 ## Live Demo
 
-You can try out the live demo of the app [here](https://glittery-nougat-31ee8a.netlify.app/).
+You can try out the live demo of the app [here](https://firebase-authentication-and-crud.onrender.com/).
 
 ## Folder Structure
 
