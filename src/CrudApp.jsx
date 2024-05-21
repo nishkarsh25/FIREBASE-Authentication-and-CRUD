@@ -15,7 +15,13 @@ function CrudApp() {
         fetchData();
     }, []);
 
-    
+    const addItem = async () => {
+        if (newItem.trim() !== "") {
+            const docRef = await db.collection("items").add({ name: newItem });
+            setItems([...items, { name: newItem, id: docRef.id }]);
+            setNewItem("");
+        }
+    };
 
     
 
