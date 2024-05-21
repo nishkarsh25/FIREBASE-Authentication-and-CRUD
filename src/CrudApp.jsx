@@ -30,7 +30,10 @@ function CrudApp() {
         setUpdatedItemName("");
     };
 
-    
+    const deleteItem = async (id) => {
+        await db.collection("items").doc(id).delete();
+        setItems(items.filter(item => item.id !== id));
+    };
 
     
 
