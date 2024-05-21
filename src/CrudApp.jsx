@@ -108,4 +108,4 @@ function CrudApp() {
     );
 }
 
-
+export default CrudApp;
