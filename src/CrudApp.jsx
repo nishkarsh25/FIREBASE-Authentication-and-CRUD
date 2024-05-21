@@ -51,7 +51,11 @@ function CrudApp() {
         }
     };
 
-    
+    const handleUpdateKeyPress = (e, id, name) => {
+        if (e.key === 'Enter') {
+            updateItem(id, updatedItemName);
+        }
+    };
 
     
 }
