@@ -19,7 +19,7 @@ This is a CRUD (Create, Read, Update, Delete) application built using React.js f
 
 ## Live Demo
 
-You can try out the live demo of the app [here](https://firebase-authentication-and-crud.onrender.com/).
+You can try out the live demo of the app [here](https://firebase-authentication-and-crud-1.onrender.com).
 
 ## Folder Structure
 
